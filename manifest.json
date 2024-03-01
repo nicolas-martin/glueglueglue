@@ -10,15 +10,11 @@
   "permissions": [
     "activeTab",
     "storage",
-    "scripting",
-    "webNavigation",
-    "tabs",
-    "clipboardWrite"
+    "tabs"
   ],
-  "host_permissions": [
-    "http://*/*",
-    "https://*/*"
-  ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_popup": "hello.html",
     "default_icon": "hello_extensions.png"
